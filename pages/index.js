@@ -1,12 +1,17 @@
-import Link from "next/link";
+import Layout from "../components/Layout";
+import "../scss/style.scss";
 
 const Index = () => (
-  <div>
-    <h3>My Todo App</h3>
-    <Link href="/about">
-      <a>About Project</a>
-    </Link>
-  </div>
+  <Layout>
+    <div className="center">
+      <h1>My Todo App</h1>
+      <h3 id="clock" />
+      <h3>Welcome To My Next.js Todo App</h3>
+      <h6>
+        <small>--Created By Adekunle Ibrahim</small>
+      </h6>
+    </div>
+  </Layout>
 );
 
 export default Index;

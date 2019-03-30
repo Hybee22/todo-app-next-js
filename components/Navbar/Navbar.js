@@ -6,12 +6,18 @@ class Navbar extends Component {
     return (
       <div>
         <nav>
+          <a className="brand">HyBEE</a>
+          <div>
           <Link href="/">
             <a>Home</a>
           </Link>
           <Link href="/about">
-            <a>About</a>
+            <a title="About Project">About</a>
           </Link>
+          <Link href="/todo">
+            <a>Todo</a>
+          </Link>
+          </div>
         </nav>
       </div>
     );

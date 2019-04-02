@@ -7,6 +7,11 @@ export default class TodoList extends Component {
     return (
       <div>
         <ul className="item-list" />
+        <div>
+          <button onClick={clearList} type="submit" className="btn btn-danger">
+            Remove Items
+          </button>
+        </div>
         <h3>
           {items.map(item => {
             return (
@@ -19,11 +24,6 @@ export default class TodoList extends Component {
             );
           })}
         </h3>
-        <div>
-          <button onClick={clearList} type="submit" className="btn btn-danger">
-            Remove Items
-          </button>
-        </div>
       </div>
     );
   }

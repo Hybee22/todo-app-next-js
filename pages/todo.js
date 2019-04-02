@@ -9,7 +9,7 @@ class Todo extends React.Component {
     items: [],
     id: uuid(),
     item: "",
-    edititem: false
+    editItem: false
   };
 
   handleSubmit = e => {
@@ -40,9 +40,7 @@ class Todo extends React.Component {
   };
 
   handleDelete = id => {
-    const filteredItems = this.state.items.filter(item => {
-      item.id !== id;
-    });
+    const filteredItems = this.state.items.filter(item => item.id !== id);
     this.setState({
       items: filteredItems
     });

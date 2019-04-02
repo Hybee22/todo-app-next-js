@@ -23,6 +23,7 @@ const About = () => (
         <li>Easily Deployed Anywhere</li>
         <li>Zero Configuration</li>
         <li>Scalable</li>
+        <li>Simple Page Based Routing</li>
       </ul>
     </div>
   </Layout>

@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+
 import "../scss/style.scss";
 
 const Index = () => (
@@ -15,3 +16,5 @@ const Index = () => (
 );
 
 export default Index;
+
+// module.exports = Index;

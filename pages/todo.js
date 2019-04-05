@@ -2,7 +2,9 @@ import Layout from "../components/Layout";
 import "../scss/style.scss";
 import TodoInput from "../components/TodoInput";
 import TodoList from "../components/TodoList";
+import TodoItem from "../components/TodoItem";
 import uuid from "uuid";
+import fetch from "isomorphic-unfetch";
 
 class Todo extends React.Component {
   state = {
@@ -11,6 +13,13 @@ class Todo extends React.Component {
     item: "",
     editItem: false
   };
+
+  static async getInitialProps() {
+    const res = await fetch("http://127.0.0.1:3000/api/todos");
+    const data = await res.json();
+    return { todos: data.map(entry => entry.todo) };
+  }
+  
 
   handleSubmit = e => {
     e.preventDefault();
@@ -72,6 +81,12 @@ class Todo extends React.Component {
             </div>
 
             <div className="list">
+              {this.props.todos.map(todo => (
+                <TodoItem 
+                key={todo.id}
+                title={todo.item} />
+              ))} 
+
               <TodoList
                 items={this.state.items}
                 clearList={this.clearList}

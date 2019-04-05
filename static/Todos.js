@@ -1,14 +1,25 @@
 const uuid = require("uuid");
 
-const todos = [
+module.exports = [
   {
-    id: uuid.v4(),
-    item: "Complete Work"
+    point: 1,
+    todo: {
+      id: uuid.v4(),
+      item: "Complete Work"
+    }
   },
   {
-    id: uuid.v4(),
-    item: "Submit Today"
+    point: 2,
+    todo: {
+      id: uuid.v4(),
+      item: "Submit Today"
+    }
+  },
+  {
+    point: 3,
+    todo: {
+      id: uuid.v4(),
+      item: "Await Next Instruction"
+    }
   }
 ];
-
-module.exports = todos;

@@ -7182,7 +7182,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      source_map_support_1.rewriteStacktrace(error, "D:\\desktop\\sandbox\\react\\coding_addict\\todo-list\\.next");
+      source_map_support_1.rewriteStacktrace(error, "D:\\Desktop\\SandBox\\React\\coding_addict\\todo-list\\.next");
       return error;
     }
   };
@@ -18003,7 +18003,7 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\desktop\sandbox\react\coding_addict\todo-list\node_modules\next\dist\client\next-dev */"./node_modules/next/dist/client/next-dev.js");
+module.exports = __webpack_require__(/*! D:\Desktop\SandBox\React\coding_addict\todo-list\node_modules\next\dist\client\next-dev */"./node_modules/next/dist/client/next-dev.js");
 
 
 /***/ }),

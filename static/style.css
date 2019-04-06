@@ -1,5 +1,4 @@
 body {
-  background: url("todo.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+    background: url('todo.jpg');
+    background-size: cover;
 }
